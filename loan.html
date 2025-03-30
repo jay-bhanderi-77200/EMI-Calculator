@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI calculator</title>
+    <link rel="stylesheet" href="loan.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+<h1>EMI Calculator</h1>
+            <div class="inputs">
+                <form action="#">
+                <div class="amount">
+                    <p>Amount (₹)</p>
+                    <label for="loan amount"></label>
+                    <input type="number" id="loanamount">
+
+                </div>
+                <div class="rate">
+                    <p>Interest Rate (%)</p>
+                    <label for="interest rate"></label>
+                    <input type="number" id="interestrate" >
+                </div>
+                <div class="month">
+                    <p>Month(In Tenure)</p>
+                    <label for="tenure"></label>
+                    <input type="number" id="loantenure" >
+                </div>
+            </form>
+            </div>
+            
+            </div>
+           
+
+            <div class="ans">
+
+                <div class="button">
+                    <button onclick="calculateEmi()" class="btn">Calculate</button>
+                </div>
+                <div class="result" id="emi"></div>
+                <div class="result" id="interest"></div>
+                <div class="result" id="payable"></div>
+                   
+                   
+                
+            </div>
+            
+        </div>
+    
+    <script src="loan.js"></script>
+</body>
+</html>
